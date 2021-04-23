@@ -12,13 +12,13 @@ public class FileWriteClass {
 	
 	public FileWriteClass() {
 		try {
-			File file = new File("C:\\Users\\오혜령\\Desktop\\exchange.csv"); // 파일 생성
+			File file = new File(ConstValueClass.FILE_PATH); // 파일 생성
 			if(file.exists() == false) { // 파일이 존재하지 않는다면
 				isFileExist = false;
 			} else { // 파일이 이미 존재한다면
 				isFileExist = true;
 			}
-			fw = new FileWriter("C:\\Users\\오혜령\\Desktop\\exchange.csv", true); // 파일 이어쓰기				
+			fw = new FileWriter(ConstValueClass.FILE_PATH, true); // 파일 이어쓰기				
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

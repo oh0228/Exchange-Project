@@ -9,4 +9,5 @@ public class ConstValueClass {
 	final static int EX_TYPE_USD = 1;
 	final static int EX_TYPE_EUR = 2;
 	final static int EX_TYPE_JPY = 3;
+	final static String FILE_PATH = "C:\\Users\\오혜령\\Desktop\\exchange.csv";
 }
